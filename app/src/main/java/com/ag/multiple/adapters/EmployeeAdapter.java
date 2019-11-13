@@ -35,7 +35,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             return new CallViewHolder(view);
         } else {
             view = LayoutInflater.from(context).inflate(R.layout.item_email, parent, false);
-            return new CallViewHolder(view);
+            return new EmailViewHolder(view);
         }
     }
 
@@ -83,8 +83,8 @@ public class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         EmailViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtName = itemView.findViewById(R.id.call_tvn);
-            txtAddress = itemView.findViewById(R.id.call_tv_add);
+            txtName = itemView.findViewById(R.id.email_tv);
+            txtAddress = itemView.findViewById(R.id.email_tv_add);
         }
 
         private void setEmailDetails(Employees employee) {

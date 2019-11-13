@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerView);
         setDatatoList();
+        EmployeeAdapter adapter = new EmployeeAdapter(employees, this);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
     }
 
     private void setDatatoList() {
@@ -67,9 +70,5 @@ public class MainActivity extends AppCompatActivity {
         employee.setAddress("New Jersey");
         employee.setPhone("+94221035");
         employees.add(employee);
-
-        EmployeeAdapter adapter = new EmployeeAdapter(employees, this);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
     }
 }

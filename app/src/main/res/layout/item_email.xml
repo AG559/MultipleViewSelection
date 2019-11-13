@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="1dp"
     android:background="#ffffff"
     android:orientation="horizontal"
-    android:layout_margin="1dp"
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/imgMail"
+        android:id="@+id/email_img"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_gravity="center_vertical"
@@ -23,7 +23,7 @@
         android:padding="8dp">
 
         <TextView
-            android:id="@+id/call_tvn"
+            android:id="@+id/email_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
@@ -33,7 +33,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/call_tv_add"
+            android:id="@+id/email_tv_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
