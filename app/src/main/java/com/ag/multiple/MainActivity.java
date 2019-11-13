@@ -1,12 +1,11 @@
 package com.ag.multiple;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ag.multiple.adapters.EmployeeAdapter;
 import com.ag.multiple.models.Employees;
 
 import java.util.ArrayList;
@@ -20,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.recyclerView);
+//        recyclerView = findViewById(R.id.recyclerView);
         setDatatoList();
-        EmployeeAdapter adapter = new EmployeeAdapter(employees, this);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+//        EmployeeAdapter adapter = new EmployeeAdapter(employees, this);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setAdapter(adapter);
+        startActivity(new Intent(this, SingleSelection.class));
     }
 
     private void setDatatoList() {

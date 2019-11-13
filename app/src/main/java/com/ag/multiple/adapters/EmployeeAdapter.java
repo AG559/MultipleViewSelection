@@ -24,6 +24,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public EmployeeAdapter(ArrayList<Employees> employees, Context context) {
         this.employees = employees;
         this.context = context;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -46,6 +47,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         } else {
             ((EmailViewHolder) holder).setEmailDetails(employees.get(position));
         }
+
     }
 
     @Override
