@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 //        EmployeeAdapter adapter = new EmployeeAdapter(employees, this);
 //        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //        recyclerView.setAdapter(adapter);
-        startActivity(new Intent(this, SingleSelection.class));
+        startActivity(new Intent(this, MultipleSelection.class));
     }
 
     private void setDatatoList() {
